@@ -1,0 +1,76 @@
+body{
+    margin:0;
+    font-family: 'Roboto', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Itim', cursive;
+}
+label{
+    display: inline-block;
+    width: 100%;
+    font-family: "Itim", cursive;
+}
+.main-container{
+    display: flex;
+    justify-content: center;
+}
+.book-container{
+    width: 668px;
+    min-height: 500px;
+    background-image: url('assets/img/book.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    padding: 25px;
+}
+.book-container h2{
+    text-align:center;
+}
+.left-container, .right-container{
+    width: 50%;
+    padding: 20px;
+}
+
+/* Edit - Add blocks */
+.edit-form input{
+    width: 97.5%;
+}
+.edit-form select{
+    width: 99.5%;
+}
+.edit-form input[type=submit]{
+    width: 99.5%;
+    height:40px;
+    margin-top:10px;
+}
+.form-group{
+    margin-bottom:10px;
+}
+.invalid{
+    color:red;
+    font-size:12px;
+    margin-bottom:10px;
+}
+
+/* List */
+.list-container{
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px 15px;
+    overflow: auto;
+    width:250px;
+    height:300px;
+}
+.list-container div{
+    padding: 10px 0px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+.list-container div:last-child {
+    border:none;
+}
+.buttons-container{
+    padding-top:15px;
+    text-align:center;
+}
+
+

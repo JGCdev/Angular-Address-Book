@@ -1,0 +1,17 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Address Book
+  </h1>
+</div>
+<div class="main-container">
+  <div class="book-container">
+      <div class="left-container">
+          <app-block-add *ngIf="addBlockVisible"></app-block-add>
+          <app-block-edit *ngIf="!addBlockVisible"></app-block-edit>
+      </div>
+      <div class="right-container">
+          <app-block-list (changeAdd)="onChange($event)"></app-block-list>
+      </div>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+<div class="block-right">
+    <h2>Address List</h2>
+    <div class="list-container">
+        <div *ngFor="let item of itemList;  let i = index" (click)=editAddress(item,i)>{{item.name}} - {{item.address | formatAddress}}</div>
+    </div>
+    <div class="buttons-container">
+        <button class="def-btn" (click)="showAddBlock()">+ Add New</button>
+    </div>
+</div>
+
